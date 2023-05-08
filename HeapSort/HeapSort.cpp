@@ -39,7 +39,7 @@ HeapSort::HeapSort(int size)
 
 HeapSort::~HeapSort()
 {
-	cout << "»ý¼ºµÈ ¹è¿­ »èÁ¦";
+	cout << "ìƒì„±ëœ ë°°ì—´ ì‚­ì œ";
 	delete[] arr;
 }
 
@@ -61,17 +61,4 @@ void HeapSort::heapSort()
 		swap(arr[0], arr[i]);
 		heapify(arr, i, 0);
 	}
-}
-
-int main() {
-	HeapSort arr(20);
-
-	cout << "»ý¼ºµÈ ¹è¿­: ";
-	arr.print();
-
-	cout << "¹è¿­À» Á¤·ÄÇÕ´Ï´Ù.(Heap Sort)" << endl;
-	arr.heapSort();
-
-	cout << "Á¤·ÄµÈ ¹è¿­: ";
-	arr.print();
 }
