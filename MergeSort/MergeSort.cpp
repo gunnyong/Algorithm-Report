@@ -46,11 +46,11 @@ MergeSort::MergeSort(int size)
 				i--;
 		}
 	}
-} // 1 ~ 100±îÁö ·£´ı »ó¼ö 20°³ »ı¼º, Áßº¹ °ªÀº Á¦¿ÜÇÑ´Ù.
+} // 1 ~ 100ê¹Œì§€ ëœë¤ ìƒìˆ˜ 20ê°œ ìƒì„±, ì¤‘ë³µ ê°’ì€ ì œì™¸í•œë‹¤.
 
 MergeSort::~MergeSort()
 {
-	cout << "»ı¼ºµÈ ¹è¿­ »èÁ¦";
+	cout << "ìƒì„±ëœ ë°°ì—´ ì‚­ì œ";
 	delete[] arr;
 }
 
@@ -73,17 +73,4 @@ void MergeSort::mergeSort(int left, int right)
 
 		merge(left, mid, right);
 	}
-}
-
-int main() {
-	MergeSort arr(20);
-
-	cout << "»ı¼ºµÈ ¹è¿­: ";
-	arr.print();
-
-	cout << "¹è¿­À» Á¤·ÄÇÕ´Ï´Ù.(Merge Sort)" << endl;
-	arr.mergeSort(0, 19);
-
-	cout << "Á¤·ÄµÈ ¹è¿­: ";
-	arr.print();
 }
