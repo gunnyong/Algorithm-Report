@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//생성자 구현부
 QuickSort::QuickSort(int size)
 {
 	this->size = size;
@@ -17,14 +18,16 @@ QuickSort::QuickSort(int size)
 				i--;
 		}
 	}
-} // 1 ~ 100���� ���� ��� 20�� ����, �ߺ� ���� �����Ѵ�.
+} // 1 ~ 100까지 랜덤 상수 20개 생성, 중복 값은 제외한다.
 
+//소멸자 구현부
 QuickSort::~QuickSort()
 {
-	cout << "������ �迭 ����";
+	cout << "생성된 배열 삭제";
 	delete[] arr;
 }
 
+//배열 출력 함수 구현부
 void QuickSort::print()
 {
 	cout << "[ ";
@@ -34,10 +37,11 @@ void QuickSort::print()
 	cout << "]" << endl;
 }
 
+//퀵 정렬 함수 구현부
 void QuickSort::quickSort(int l, int r)
 {
-	int i = l; //�迭 �ε����� ó��
-	int j = r; //�迭 �ε����� ��
+	int i = l;
+	int j = r;
 	int pivot = arr[(i + j) / 2];
 
 	while (i <= j) {
