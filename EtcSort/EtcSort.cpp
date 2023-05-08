@@ -17,7 +17,7 @@ EtcSort::EtcSort(int size)
 				i--;
 		}
 	}
-} // 1 ~ 100±îÁö ·£´ı »ó¼ö 20°³ »ı¼º, Áßº¹ °ªÀº Á¦¿ÜÇÑ´Ù.
+} // 1 ~ 100ê¹Œì§€ ëœë¤ ìƒìˆ˜ 20ê°œ ìƒì„±, ì¤‘ë³µ ê°’ì€ ì œì™¸í•œë‹¤.
 
 EtcSort::~EtcSort()
 {
@@ -68,43 +68,4 @@ void EtcSort::selecitonSort()
 
 		swap(arr[min], arr[i]);
 	}
-}
-
-int main() {
-	EtcSort arr1(20);
-
-	cout << "»ı¼ºµÈ ¹è¿­: ";
-	arr1.print();
-
-	cout << "¹è¿­À» Á¤·ÄÇÕ´Ï´Ù.(Bubble Sort)" << endl;
-	arr1.bubbleSort();
-
-	cout << "Á¤·ÄµÈ ¹è¿­: ";
-	arr1.print();
-
-	cout << endl;
-
-	EtcSort arr2(20);
-
-	cout << "»ı¼ºµÈ ¹è¿­: ";
-	arr2.print();
-
-	cout << "¹è¿­À» Á¤·ÄÇÕ´Ï´Ù.(Insertion Sort)" << endl;
-	arr2.insertionSort();
-
-	cout << "Á¤·ÄµÈ ¹è¿­: ";
-	arr2.print();
-
-	cout << endl;
-
-	EtcSort arr3(20);
-
-	cout << "»ı¼ºµÈ ¹è¿­: ";
-	arr3.print();
-
-	cout << "¹è¿­À» Á¤·ÄÇÕ´Ï´Ù.(Selection Sort)" << endl;
-	arr3.selecitonSort();
-
-	cout << "Á¤·ÄµÈ ¹è¿­: ";
-	arr3.print();
 }
